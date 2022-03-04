@@ -45,74 +45,127 @@ p {
 }
 
 :root {
-  --fb: #0f90f3;
-  --fb-bg: #0f90f399;
+  --mail: #f30f40;
+  --mail-bg: #f30f5b99;
   --github: #6e549499;
   --github-bg: #6e549499;
   --linkedin: #0a66c2;
   --linkedin-bg: #0a66c299;
-  --icons-hover-bg:#d4d0d08c;
+  --icons-hover-bg: #d4d0d08c;
 }
 
-.facebook {
-  border-radius: 50% 50% 48% 52% / 49% 50% 50% 51% ;
-  background-color: var(--fb-bg);
-  padding: .1rem 1.1rem .6rem 1.1rem;
+.email {
+  border-radius: 50% 50% 46% 54% / 39% 45% 55% 61%;
+  background-color: var(--mail-bg);
+  padding: 0.1rem 1.1rem 0.6rem 1.1rem;
 }
+
 .github {
   border-radius: 50% 50% 48% 52% / 58% 46% 54% 42%;
   background-color: var(--github-bg);
-  padding: .1rem 1.1rem .6rem 1.1rem;
+  padding: 0.1rem 1.1rem 0.6rem 1.1rem;
 }
 .linkin {
-  border-radius: 54% 46% 52% 48% / 49% 50% 50% 51%  ;
+  border-radius: 54% 46% 52% 48% / 49% 50% 50% 51%;
   background-color: var(--linkedin-bg);
-  padding: .1rem 1.1rem .6rem 1.1rem;
-}
-.facebook:hover{
-    background-color: var(--icons-hover-bg);
-    color: var(--fb);
-    cursor: pointer;
-  transition: all .5s ease-in-out;
-
-}
-.github:hover{
-    background-color: var(--icons-hover-bg);
-    color: var(--github);
-  transition: all .5s ease-in-out;
-    
-}
-.linkin:hover{
-    background-color: var(--icons-hover-bg);
-    color: var(--linkedin);
-  transition: all .5s ease-in-out;
-
+  padding: 0.1rem 1.1rem 0.6rem 1.1rem;
 }
 
-.spot-top{
-  background-color: rgba(76, 0, 255, 0.808);
-
+.email:hover {
+  background-color: var(--icons-hover-bg);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.mail:hover {
+  color: var(--mail) !important;
+}
+.github:hover {
+  background-color: var(--icons-hover-bg);
+  transition: all 0.5s ease-in-out;
+}
+.git:hover {
+  color: var(--github) !important;
 }
 
-.bi-arrow-right:hover{
+.linkin:hover {
+  background-color: var(--icons-hover-bg);
+  transition: all 0.5s ease-in-out;
+}
+.link:hover {
+  color: var(--linkedin) !important;
+}
+
+.spot-top {
+  background-color: rgb(0 188 212 / 33%);
+  border-radius: 64% 36% 50% 50% / 48% 53% 47% 52%;
+  height: 400px;
+  width: 486px;
+  top: -209px;
+  right: -121px;
+  z-index: -1;
+  position: absolute;
+}
+
+.img-spot_1 {
+  background-color: rgb(176 43 39 / 16%);
+  border-radius: 36% 64% 39% 61% / 66% 41% 59% 34%;
+  height: 78px;
+  width: 93px;
+  z-index: -1;
+  position: absolute;
+}
+.img-spot_2 {
+  background-color: rgb(12 138 236 / 70%);
+  border-radius: 66% 34% 39% 61% / 66% 67% 33% 34%;
+  height: 400px;
+  width: 387px;
+  right: -352px;
+  bottom: -33px;
+  z-index: -1;
+  position: absolute;
+}
+.img-spot_3 {
+  background-color: #9b27b052;
+  border-radius: 66% 34% 39% 61% / 66% 67% 33% 34%;
+  height: 43px;
+  width: 47px;
+  bottom: -33px;
+  z-index: -1;
+  position: absolute;
+}
+
+.text-spot {
+  background-color: rgb(0 188 212 / 33%);
+  border-radius: 66% 34% 39% 61% / 66% 67% 33% 34%;
+  height: 143px;
+  width: 154px;
+  bottom: -112px;
+  z-index: -1;
+  position: absolute;
+}
+.bi-arrow-right {
+  width: 40px;
+}
+.arrow:hover {
   transform: translateX(3px);
+  cursor: pointer;
 }
 
-.bi-eye-fill:hover{
-  transition: all .5s ease-in-out;
+.bi-eye-fill:hover {
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   color: #1e9ad4;
 }
-.card-title:hover{
-  transition: all .5s ease-in-out;
+.card-title:hover {
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   color: #1e9ad4;
 }
 
-.assignment:hover{
-  transform: translateY(-4px);
+.assignment:hover .bg {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-in-out;
 }
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -123,13 +176,13 @@ p {
   .box {
     margin-bottom: 6px;
   }
-  .social{
+  .social {
     justify-content: space-around !important;
     flex-direction: column !important;
-}
-.profile_img{
-  width: 100%;
-}
+  }
+  .profile_img {
+    width: 100%;
+  }
 }
 
 /*  Large devices (desktops, 992px and up) */
@@ -137,7 +190,7 @@ p {
   .div-border {
     border-left: 1px solid rgba(0, 0, 0, 0.425);
   }
-  .profile_img{
+  .profile_img {
     width: 50%;
   }
 }

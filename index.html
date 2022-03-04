@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
 
     <!-- Bootstrap Css   -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,48 +13,56 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="position-relative">
+<body class="position-relative" style="overflow-x: hidden;">
     <section role="introduction">
-        <div class="container">
-            <div class="text-center mb-5 mt-3">
+        <div class="container ">
+            <div class="text-center mb-5 mt-3  " data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                data-aos-delay="300" data-aos-offset="0">
                 <h1>Ei Thawder Yamin</h1>
-                <h3 style="color: rgba(12, 12, 12, 0.411); letter-spacing: .5rem;">EIT PDP 1st Generation</h3>
+                <h3 style=" color: rgba(12, 12, 12, 0.411); letter-spacing: .5rem;">EIT PDP 1st Generation</h3>
             </div>
 
             <div class=" d-md-flex gap-md-5">
 
-                <div class="d-flex social justify-content-around">
-                    <div class="facebook">
-                     <i class="bi bi-facebook fs-1"></i>
+                <div class="d-flex social justify-content-around " data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1000">
+                    <div class="email">
+                        <a class="mail" style="color: black;" href="mailto:eithawderyamin@gmail.com"><i class="bi bi-envelope fs-1"></i></a>
                     </div>
-    
+
                     <div class="github">
-                        <i class="bi bi-github fs-1"></i>
+                        <a class="git" style="color: black;" href="https://github.com/Ei-Thawdar-Yamin"><i class="bi bi-github fs-1"></i></a>
                     </div>
-    
+
                     <div class="linkin">
-                        <i class="bi bi-linkedin fs-1"></i>
+                        <a class="link" style="color: black;" href="https://www.linkedin.com/in/ei-thawder-yamin-0278b4232/"><i class="bi bi-linkedin fs-1"></i></a>
                     </div>
                 </div>
-    
+
                 <div class="row flex-column-reverse justify-content-between flex-md-row">
-                    <div class="col-md-6 col-12 align-items-center d-flex my-5 text-center">
-                        <p>
-                            At EIT PDP, I learned about Technical communication English and web developments. Thanks to the
+                    <div class="col-md-6 col-12 align-items-center d-flex my-5 text-center position-relative ">
+                        <div class="text-spot"></div>
+                        <p data-aos="fade-up" data-aos-duration="1000">
+                            At EIT PDP, I learned about Technical communication English and web developments. Thanks to
+                            the
                             EIT PDP for teaching them.
                         </p>
                     </div>
                     <div class="col-md-6 col-12 ">
-                        <div class="text-center">
-                            <img class="profile_img mt-4" src="./assets/IMG_20220226_222713.jpg" alt=""
-                            srcset="">
+                        <div class="text-center position-relative ">
+                            <div class="img-spot_1"></div>
+                            <div class="img-spot_2"></div>
+                            <div class="img-spot_3"></div>
+                            <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                                class="profile_img mt-4" src="./assets/IMG_20220226_222713.jpg" alt="" srcset="">
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
@@ -63,33 +71,43 @@
     <section role="project">
         <div class="container">
             <div class="text-center">
-                <h3 class="mb-2 mb-md-5" >
+                <h3 class="mb-2 mb-md-5" data-aos="zoom-in-up"
+                data-aos-easing="linear" data-aos-duration="300">
                     Home Work & Assignment
                 </h3>
             </div>
 
             <div class="row my-4">
                 <div class="col-lg-6 col-12 text-center">
-                    <h3>Technical Communication English </h3>
+                    <h3  data-aos="zoom-in-up"
+                    data-aos-easing="linear" data-aos-duration="300">Technical Communication English </h3>
                     <div class="row mt-5 ">
                         <div class="col-md-6 col-12 mb-5">
-                            <div class=" box rounded-2">
+                            <div class=" box rounded-2 " data-aos="zoom-in-up" data-aos-easing="linear"
+                                data-aos-duration="300">
                                 <h6>
                                     Best Free IDE For Javascript, Html And CSS
                                 </h6>
                                 <div class="d-flex justify-content-end">
-                                    <i class="bi bi-arrow-right "></i>
+                                    <a class="arrow" style="color: black;"
+                                        href="http://pro.8eit.org/ety/ETY/Homework/Homework%20HW002.pdf"><i
+                                            class="bi bi-arrow-right "></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6 col-12 mb-5">
-                            <div class=" box rounded-2">
+                            <div class=" box rounded-2 " data-aos="zoom-in-up" data-aos-easing="linear"
+                                data-aos-duration="300">
                                 <h6>
                                     A Programming Language Most Demanded In The Next Decade
                                 </h6>
                                 <div class="d-flex justify-content-end">
-                                    <i class="bi bi-arrow-right "></i>
+                                    <a class="arrow" style="color: black;"
+                                        href="https://pro.8eit.org/ety/ETY/Homework/Homework%20HW0002-0001.pdf"><i
+                                            class="bi bi-arrow-right "></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -97,25 +115,36 @@
                 </div>
 
                 <div class="col-lg-6 col-12 text-center">
-                    <h3>Web Development</h3>
+                    <h3 data-aos="zoom-in-up"
+                    data-aos-easing="linear" data-aos-duration="300">Web Development</h3>
                     <div class="row div-border mt-5 ">
                         <div class="col-md-6 col-12 mb-5 ">
-                            <div class="assignment position-relative rounded-3 overflow-hidden">
+                            <div class="assignment position-relative rounded-3 overflow-hidden " data-aos="zoom-in-up"
+                                data-aos-easing="linear" data-aos-duration="300">
                                 <img class="bg" src="./assets/card.png" alt="">
                                 <div
                                     class="card-overlay position-absolute d-flex justify-content-between align-items-end">
                                     <p class="card-title">Image Card</p>
-                                    <i class="bi bi-eye-fill"></i>
+                                    <a style="color: white;"
+                                        href="https://pro.8eit.org/ety/ETY/EIT_FE/19122021/Card.html"><i
+                                            class="bi bi-eye-fill"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class=" assignment col-md-6 col-12 mb-5">
-                            <div class=" position-relative rounded-3 overflow-hidden">
+                            <div class=" position-relative rounded-3 overflow-hidden " data-aos="zoom-in-up"
+                                data-aos-easing="linear" data-aos-duration="300">
                                 <img class="bg" src="./assets/form.png" alt="">
                                 <div
                                     class="card-overlay  position-absolute d-flex justify-content-between align-items-end">
                                     <p class="card-title">Sign In Form</p>
-                                    <i class="bi bi-eye-fill"></i>
+
+                                    <a style="color: white;"
+                                        href="https://pro.8eit.org/ety/ETY/EIT_FE/312022/form.html"><i
+                                            class="bi bi-eye-fill"></i>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -126,11 +155,16 @@
         </div>
     </section>
 
-    <div class="spot-top"></div>
+    <div class="spot-top "></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
